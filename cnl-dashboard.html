@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberNet Labs Load Balancer Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        async function loadStats() {
+            const response = await fetch('/api/stats');
+            const data = await response.json();
+            document.getElementById('mode').innerText = data.mode;
+            document.getElementById('total').innerText = data.total_requests;
+            let backendsHTML = '';
+            for (const [backend, hits] of Object.entries(data.backend_hits)) {
+                backendsHTML += `<li>${backend}: ${hits} requests</li>`;
+            }
+            document.getElementById('backends').innerHTML = backendsHTML;
+        }
+        setInterval(loadStats, 2000);
+        loadStats();
+    </script>
+</head>
+<body>
+    <h1>CyberNet Labs Load Balancer Dashboard</h1>
+    <p><strong>Mode:</strong> <span id="mode"></span></p>
+    <p><strong>Total Requests:</strong> <span id="total"></span></p>
+    <h3>Backend Servers:</h3>
+    <ul id="backends"></ul>
+</body>
+</html>
