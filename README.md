@@ -23,12 +23,21 @@ It distributes incoming HTTPS connections across multiple backend servers, and p
 
 ## Project Structure
 CyberNetLabs-LoadBalancer/
+
+
+
 ├── CNL-loadBalancer.py       # Main Load Balancer
+
 ├── cnl-dashboard.html        # Dashboard Webpage
+
 ├── cnl-style.css             # Dashboard Styling
+
 ├── README.md                 # Documentation
+
 ├── server.key (not uploaded) # SSL Private Key
-├── server.crt (not uploaded) # SSL #Certificate
+
+├── server.crt (not uploaded)# SSL #Certificate
+
 > **Note**: `server.key` and `server.crt` are intentionally not uploaded for security reasons.
 
 ---
