@@ -58,7 +58,7 @@ No external libraries required — everything uses Python's built-in modules!
 ```bash
 cd CyberNetLabs-LoadBalancer
 
-
+```
 (Or download as a ZIP and extract it.)
 
 ### 3. Generate SSL Certificates
@@ -70,13 +70,13 @@ openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out serv
 
 •	When asked for info, just press Enter or fill as needed.
 	•	This creates your encryption keys.
-###4. Run the Load Balancer
+### 4. Run the Load Balancer
 python CNL-loadBalancer.py
 The program will ask you:
 	•	Backend servers (example: 127.0.0.1:5000, 127.0.0.1:5001, etc.)
 	•	Listening port (example: 8443)
 	•	Mode: round_robin or random
- ###5. Access the Dashboard
+ ### 5. Access the Dashboard
 
 After starting:
 	•	Go to the Dashboard:
@@ -110,7 +110,7 @@ Now your Load Balancer is running securely on HTTPS!
 Licensed under the MIT License.
 Feel free to modify, improve, and use it in your own projects.
 
-###About
+## About
 
 CyberNetLabs-LoadBalancer is proudly developed by CyberNet Labs
 Innovating the future of secure networking.
