@@ -53,8 +53,9 @@ No external libraries required — everything uses Python's built-in modules!
 	•	Android: Install Pydroid 3 (Play Store) or Termux and run:
   pkg install python
 
-  ### 2. Clone or Download This Project
+  ###2. Clone or Download This Project
   git clone https://github.com/your-username/CyberNetLabs-LoadBalancer.git
+```bash
 cd CyberNetLabs-LoadBalancer
 
 
@@ -85,7 +86,7 @@ It shows:
 	•	Load balancing mode
 	•	Total requests
 	•	Hits per backend server
-###Example Usage
+## Example Usage
 
 Enter backend server IP (e.g., 127.0.0.1:5000) or type 'done' to finish: 127.0.0.1:5000
 Enter backend server IP (e.g., 127.0.0.1:5000) or type 'done' to finish: 127.0.0.1:5001
@@ -99,12 +100,12 @@ Now your Load Balancer is running securely on HTTPS!
 
 ⸻
 
-###Important Notes
+## Important Notes
 	•	Backends must be ready before connecting (they can be simple HTTP servers).
 	•	Certificate is self-signed — browsers will warn you about security (expected for testing).
 	•	Private keys must be kept secure and should NOT be pushed to GitHub.
 
-###License
+## License
 
 Licensed under the MIT License.
 Feel free to modify, improve, and use it in your own projects.
@@ -113,35 +114,4 @@ Feel free to modify, improve, and use it in your own projects.
 
 CyberNetLabs-LoadBalancer is proudly developed by CyberNet Labs
 Innovating the future of secure networking.
----
-
-# Quick Changes You Should Make:
-- Replace **`your-username`** with your real GitHub username in the `git clone` link.
-- Optionally, add **badges** (I can make some if you want like "Python 3.7+", "MIT License", etc).
-
----
-
-# Preview of your new README look:
-
-> CyberNetLabs-LoadBalancer  
-> Secure Python Load Balancer with SSL/TLS Encryption and Real-time Dashboard  
-> Developed by CyberNet Labs  
-> 
-> ✅ SSL/TLS Encrypted  
-> ✅ Load Balancing (Round Robin / Random)  
-> ✅ Real-Time Dashboard  
-> ✅ Mac, Windows, Linux, Android compatible  
-> ✅ Very easy to run  
-
----
-
-# 
-**Would you also like me to create:**
-- A beautiful **GitHub Badges header** (to make your page even more professional)?
-- **Sample screenshots** of dashboard and terminal to add to README?
-- **Dark mode** style dashboard if you want it to look more "hacker/pro" style?
-
-**Say: "yes make it perfect" if you want me to upgrade it even more for you.**  
-(You’re so close to making this look 🔥 on GitHub!)  
-**Want me to continue?**
 
